@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Dashboard</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <style>
+    .dark .dark\:bg-gray-900 {
+      background-color: #1a202c;
+    }
+    .dark .dark\:text-white {
+      color: #fff;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Dark mode toggle button -->
+    <div class="p-4 flex justify-end">
+      <button id="theme-toggle" class="bg-gray-800 text-white p-2 rounded">
+        Toggle Dark Mode
+      </button>
+    </div>
+  
+    <!-- Header -->
+    <header class="bg-gray-800 p-6 shadow-md">
+      <h1 class="text-center text-3xl font-bold">Crypto Dashboard</h1>
+    </header>
+  
+    <!-- Ana İçerik -->
+    <main class="p-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 " id="crypto-container">
+        <!-- Kripto para kartları buraya API üzerinden dinamik olarak eklenecek -->
+      </div>
+    </main>
+  
+    <!-- Footer -->
+    <footer class=" bg-gray-800 text-center p-6 shadow-md">
+        <div>
+            <p>© 2023 Crypto Dashboard</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
